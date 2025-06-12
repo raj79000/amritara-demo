@@ -1,8 +1,8 @@
 // import Fullpage, { FullPageSections, FullpageSection, FullpageNavigation } from '@ap.cx/react-fullpage';
 import BannerSec from './BannerSec'
-import MainHeader from '@/app/Common/Header/MainHeader'
 import AboutSec from './AboutSec';
 import NestedSwiper from './NestedSlider';
+import MainHeader from "../../Common/Header/MainHeader"
 
 const HomePage = () => {
   return (

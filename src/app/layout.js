@@ -1,6 +1,7 @@
 import { Elsie, Montserrat } from 'next/font/google';
 import 'bootstrap/dist/css/bootstrap.min.css'; 
 import "./globals.css";
+import Footer from './Common/Footer/Footer';
 
 const elsie = Elsie({
   weight: ['400', '900'], // Load specific weights
@@ -26,6 +27,7 @@ export default function RootLayout({ children }) {
     <html lang="en" className={`${elsie.variable} ${montserrat.variable}`}>
       <body>
         {children}
+        <Footer></Footer>
       </body>
     </html>
   );
