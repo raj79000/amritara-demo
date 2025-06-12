@@ -1,0 +1,82 @@
+:root {
+  --red: #803525;
+  --gold: #c99f69;
+  --dgold:#957b54;
+  --white: #fff;
+  --black: #000;
+  --grey: #747474;
+  --font-heading: var(--font-elsie);
+  --font-body: var(--font-montserrat);
+
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: var(--font-body), sans-serif;
+  background-color: #fff;
+  color: #333;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading), serif;
+  margin-top: 0;
+  font-weight: 400; /* Elsie has 400 and 900 weights */
+  color: #111;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.75rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
+h5 {
+  font-size: 1.25rem;
+}
+
+h6 {
+  font-size: 1rem;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+
+
+.global-heading{
+    color: var(--red)!important;
+    text-transform: uppercase!important;
+    font-size: 35px !important;
+    font-weight: 500 !important;
+}
+.section-padding{
+    padding: 3rem 0;
+}
