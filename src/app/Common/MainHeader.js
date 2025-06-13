@@ -35,7 +35,7 @@ const MainHeader = () => {
         <div className="container">
           <div className="header-display-flex">
             <Link className="navbar-brand" href="/">
-            <Image src="/img/logo.png" className="header-logo" alt="Amritara Hotels" width={50} height={50} />
+            <Image src="/img/logo.png" className="header-logo" alt="Amritara Hotels And Resorts" width={300} height={200} />
           </Link>
           
           <div className="navbarnav" id="navbarNav">

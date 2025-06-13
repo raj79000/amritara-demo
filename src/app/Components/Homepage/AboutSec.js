@@ -35,7 +35,7 @@ const AboutSec = () => {
 
   return (
     <>
-      <div className='h-full flex items-center justify-center'>
+      <div className="h-full flex items-center justify-center">
     
         <div className={`${styles.about} py-5`}>
           <div className={`${styles.about_main_box} container`}>

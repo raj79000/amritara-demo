@@ -1,7 +1,7 @@
 import Link from "next/link";
 import style from "./footer.module.css";
 import Image from "next/image";
-import { MessageCircleCode, FacebookIcon, InstagramIcon } from 'lucide-react';
+import { MessageCircleCode, FacebookIcon, InstagramIcon, TwitterIcon } from 'lucide-react';
 
 const Footer = () => {
   return (
@@ -59,7 +59,7 @@ const Footer = () => {
                     </Link>
                 </p>
                 <p className={style.fcoldata}>
-                    <span className={style.linkstyle2}>Wedding & Events:-</span>
+                    <span className={style.linkstyle2}>Wedding & Events:- </span>
                     <Link href="tel:011-40752200" className={style.linkstyle2}>
                         011-40752200
                     </Link>
@@ -72,35 +72,38 @@ const Footer = () => {
               </div>
             </div>
             <div className="col-md-5 mb-3">
-              <div className="footerContactData">
-                <h5 className={`${style.footerHeading} text-uppercase`}>Connect with us </h5>
-                <div className="SocialLinkFooter">
-                    <Link href="https://www.facebook.com/amritarahotels" target="_blank" className={style.socialLink}>
+              <div className={style.footerContactData}>
+                <h5 className={`${style.footerHeadingR} text-uppercase`}>Connect with us </h5>
+                <div className={style.SocialLinkFooter}>
+                    <Link href="https://www.facebook.com/amritararesorts/" target="_blank" className={style.socialLink} title="Facebook">
                         <FacebookIcon size={24} className={style.socialIcon} />
                     </Link>
-                    <Link href="https://www.instagram.com/amritarahotels/" target="_blank" className={style.socialLink}>
+                    <Link href="https://wa.me/+919319296390?text=Hi Amritara Hotels And Resorts." target="_blank" className={style.socialLink} title="Whatsapp">
                         <MessageCircleCode size={24} className={style.socialIcon} />
                     </Link>
-                    <Link href="https://www.linkedin.com/company/amritara-hotels-and-resorts/" target="_blank" className={style.socialLink}>
+                    <Link href="https://twitter.com/amritararesorts" target="_blank" className={style.socialLink} title="Twitter">
+                        <TwitterIcon size={24} className={style.socialIcon} />
+                    </Link>
+                    <Link href="https://www.instagram.com/amritarahotelsandresorts/" target="_blank" className={style.socialLink} title="Instagram">
                         <InstagramIcon size={24} className={style.socialIcon} />
                     </Link>
                 </div>
                 <div className={style.GetLatestUpdate}>
                     <h5 className={`${style.footerHeading2} text-uppercase`}>Get latest updates</h5>
                     <form className={style.footerForm}>
-                        <div className={style.footerInputContainer}>
+                        <div className={`{style.footerInputContainer} mb-1`}>
                             <input type="email" placeholder="Enter your Email ID" className={style.footerInput} />
-                            <button type="submit" className={style.footerButton}>Subscribe</button>
+                            <button type="submit" className={style.footerSButton}>Submit</button>
                         </div>
                         <input type="checkbox" className={style.footerCheckbox} />
-                        <span>Agree to Subscribe the newsletter</span>
+                        <span className={style.fCheckText}>Agree to Subscribe newsletter</span>
                     </form>
                 </div>
                 
               </div>
             </div>
           </div>
-          <div className="text-center mt-3">
+          <div className="text-center mt-5">
            Copyright &copy; {new Date().getFullYear()}, Amritara Hotels and Resorts. All rights reserved. Powered by 
             <Link href="https://www.cinuniverse.com/" target="_blank">
               CIN Universe

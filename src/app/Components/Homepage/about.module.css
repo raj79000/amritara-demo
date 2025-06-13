@@ -12,16 +12,16 @@
 }
 
   .about{
-    background-color: #fdf9f3;
     padding: 0;
     height: 100vh;
     align-items: center;
-    background-color: #fdf9f3;
     padding: 0;
-    height: 100vh;
     align-items: center;
     position: relative;
     overflow: hidden;
+    width: 100%;
+    background-image: url(/img/about-bg1.webp);
+    background-size: cover;
     width: 100%;
   }
 

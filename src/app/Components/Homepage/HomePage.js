@@ -4,6 +4,7 @@ import AboutSec from './AboutSec';
 import NestedSwiper from './NestedSlider';
 import MainHeader from '../../Common/MainHeader';
 import NewOfferSlider from './NewOfferSlider';
+import ZonesList from './ZonesList';
 
 const HomePage = () => {
   return (
@@ -14,6 +15,7 @@ const HomePage = () => {
       <AboutSec></AboutSec>
       <NestedSwiper></NestedSwiper>
       <NewOfferSlider></NewOfferSlider>
+      <ZonesList></ZonesList>
 
 
 

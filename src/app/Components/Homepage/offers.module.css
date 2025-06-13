@@ -1,0 +1,56 @@
+.offerbox {
+    background-color: var(--white);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: var(--primary-shadow);
+    margin-bottom: 1rem;
+}
+
+.offerboximg {
+    height: 250px;
+    object-fit: cover;
+    width: 100%;
+    border-bottom-left-radius: 0%;
+    border-bottom-right-radius: 0%;
+}
+
+
+.offerboxcontent {
+    padding: 1rem;
+}
+.offerboxcontentheading {
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: .6rem;
+    font-family: var(--font-body);
+}
+
+.offerboxcontentbtn {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.offerknowmore {
+    font-size: 12px;
+    padding: 5px 15px;
+    border-radius: 0;
+    font-weight: var(--primary-font-weight);
+    margin-right: 5px;
+    text-transform: uppercase;
+    background-color: var(--white);
+    color: var(--black);
+    border: 1px solid var(--black);
+}
+.offerkbooknow {
+    font-size: 12px;
+    padding: 5px 15px;
+    border-radius: 0;
+    font-weight: var(--primary-font-weight);
+    margin-right: 5px;
+    text-transform: uppercase;
+    background-color: var(--black);
+    color: var(--white);
+    border: 1px solid var(--black);
+    
+}

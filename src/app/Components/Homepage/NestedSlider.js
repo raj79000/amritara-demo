@@ -125,7 +125,7 @@ export default function NestedSwiper() {
   }, [parentSwiper]);
 
   return (
-    <div className="main-nested-slider mx-auto p-6 bg-white rounded-lg shadow-lg our-collection-section section-padding">
+    <div className="main-nested-slider mx-auto our-collection-section section-padding">
         
         <div className="container">
         <h3 className="main-section-title global-heading">Our Collection</h3>
@@ -175,7 +175,7 @@ export default function NestedSwiper() {
                     className="child-swiper main-child-slider"
                     >
                     {slide.items.map((item, idx) => (
-                        <SwiperSlide key={`${index}-${idx}`} className="child-slider-rel bg-white rounded-lg shadow-md">
+                        <SwiperSlide key={`${index}-${idx}`} className="child-slider-rel">
                         <Image
                         height={600} width={600}
                             src={item.image}

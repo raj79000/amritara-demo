@@ -1,5 +1,6 @@
 :root {
   --red: #803525;
+  --lred:#f6eeeb;
   --gold: #c99f69;
   --dgold:#957b54;
   --white: #fff;
@@ -7,6 +8,10 @@
   --grey: #747474;
   --font-heading: var(--font-elsie);
   --font-body: var(--font-montserrat);
+   --primary-radius: 15px;
+  --primary-shadow: #63636333 0px 2px 8px 0px;
+  --secondary-font-weight:600;
+  --primary-font-weight:500;
 
 }
 
@@ -21,6 +26,9 @@ body {
   line-height: 1.6;
 }
 
+.bg-lred {
+  background-color: var(--lred);
+}
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-heading), serif;
   margin-top: 0;
@@ -68,7 +76,9 @@ a {
   color: inherit;
   text-decoration: none;
 }
-
+.primary-radius {
+    border-radius: var(--primary-radius);
+}
 
 
 .global-heading{
