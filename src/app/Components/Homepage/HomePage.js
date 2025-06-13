@@ -2,7 +2,8 @@
 import BannerSec from './BannerSec'
 import AboutSec from './AboutSec';
 import NestedSwiper from './NestedSlider';
-import MainHeader from "../../Common/Header/MainHeader"
+import MainHeader from '../../Common/MainHeader';
+import NewOfferSlider from './NewOfferSlider';
 
 const HomePage = () => {
   return (
@@ -12,6 +13,7 @@ const HomePage = () => {
       <BannerSec></BannerSec>
       <AboutSec></AboutSec>
       <NestedSwiper></NestedSwiper>
+      <NewOfferSlider></NewOfferSlider>
 
 
 

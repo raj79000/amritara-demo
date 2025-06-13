@@ -1,0 +1,44 @@
+.footer{
+    padding: 3rem 0;
+    background-color: #fff;
+    color: #000;
+}
+.linkstyle{
+    color: #000;
+    text-decoration: none;
+    font-weight: 600;
+}
+.footerHeading{
+    font-size: 22px;
+    font-family: Montserrat;
+    font-weight: 600;
+    color: var(--red);
+}
+.fcoldata{
+    margin-bottom: 0;
+    font-weight: 600;
+}
+.footerLogo{
+    width: 150px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    text-align: center;
+}
+.linkstyle2{
+    color: #000;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 18px;
+}
+.footerLogoD{
+    text-align: center;
+}
+
+.footerHeading2{
+    font-size: 20px;
+    font-family: Montserrat;
+    font-weight: 600;
+    color: var(--red);
+}
