@@ -4,6 +4,8 @@ import { getCitiesByZone } from "../../../lib/api/getCitiesByZone";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import Image from "next/image";
+import styles from "./zone.module.css";
+import Link from "next/link";
 
 export default function ZoneTabs({ zones }) {
   const [activeZone, setActiveZone] = useState(zones?.[0]?.id);
@@ -19,11 +21,11 @@ export default function ZoneTabs({ zones }) {
 
   return (
     <div className="py-4">
-      <ul className="nav nav-tabs zonetab-home">
+      <ul className={`nav nav-tabs ${styles.ZonetabHome}`}>
         {zones.map((zone) => (
           <li className="nav-item" key={zone.id}>
             <button
-              className={`nav-link ${activeZone === zone.id ? "active" : ""}`}
+              className={`nav-link ${styles.InActiveTab} ${activeZone === zone.id ? `active ${styles.ActiveTab}` : ""}`}
               onClick={() => setActiveZone(zone.id)}
             >
               {zone.name}
@@ -32,7 +34,7 @@ export default function ZoneTabs({ zones }) {
         ))}
       </ul>
 
-      <div className="tab-content border border-top-0 p-3">
+        <div className={`tab-content border border-top-0 ${styles.TabContent}`}>
         {cities.length > 0 ? (
           <Swiper
             spaceBetween={20}
@@ -45,16 +47,28 @@ export default function ZoneTabs({ zones }) {
                 slidesPerView: 2,
               },
               768: {
-                slidesPerView: 3,
+                slidesPerView: 2,
+              },
+              991: {
+                slidesPerView: 4,
               }
             }}
           >
             {cities.map((city) => (
               <SwiperSlide key={city.id}>
-                <div className="card">
-                  <div className="card-body">
-                    <Image src="/img/popular-3.jpg" height={300} width={500} alt={city.title} className="card-img-top" />
-                    <h5 className="card-title">{city.title}</h5>
+                <div className={styles.TabCardWrapper}>
+                  <div className={styles.TabCard}>
+                    <Image src="/img/popular-3.jpg" height={300} width={500} alt={city.title} className={styles.TabCardImg} />
+                    <h5 className={styles.TabCardTitle}>{city.title}</h5>
+                    <div className={styles.TabContentBtn}>
+                       <Link href="#" className=" explore-more-btn">
+                        Explore
+                      </Link>
+                       {/* <Link href={`/city/${city.slug}`} className="btn btn-primary"> */}
+                       <Link href="#" className="book-now-btn">
+                        Book Now
+                      </Link>
+                    </div>
                   </div>
                 </div>
               </SwiperSlide>

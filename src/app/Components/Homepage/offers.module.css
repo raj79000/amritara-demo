@@ -31,26 +31,4 @@
     justify-content: flex-start;
 }
 
-.offerknowmore {
-    font-size: 12px;
-    padding: 5px 15px;
-    border-radius: 0;
-    font-weight: var(--primary-font-weight);
-    margin-right: 5px;
-    text-transform: uppercase;
-    background-color: var(--white);
-    color: var(--black);
-    border: 1px solid var(--black);
-}
-.offerkbooknow {
-    font-size: 12px;
-    padding: 5px 15px;
-    border-radius: 0;
-    font-weight: var(--primary-font-weight);
-    margin-right: 5px;
-    text-transform: uppercase;
-    background-color: var(--black);
-    color: var(--white);
-    border: 1px solid var(--black);
-    
-}
+

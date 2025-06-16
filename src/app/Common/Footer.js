@@ -104,9 +104,9 @@ const Footer = () => {
             </div>
           </div>
           <div className="text-center mt-5">
-           Copyright &copy; {new Date().getFullYear()}, Amritara Hotels and Resorts. All rights reserved. Powered by 
+           Copyright &copy; {new Date().getFullYear()}, Amritara Hotels and Resorts. All rights reserved. Powered by&nbsp;
             <Link href="https://www.cinuniverse.com/" target="_blank">
-              CIN Universe
+               CIN Universe.
             </Link>
           </div>
         </div>

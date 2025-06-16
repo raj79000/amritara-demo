@@ -79,10 +79,10 @@ const NewOfferSlider = () => {
                     <h3 className={offstyle.offerboxcontentheading}>{offer.title}</h3>
                     <p className={offstyle.offerboxcontentpara}>{offer.description}</p>
                     <div className={offstyle.offerboxcontentbtn}>
-                      <a href="#" className={offstyle.offerknowmore}>
+                      <a href="#" className={`${offstyle.offerknowmore} explore-more-btn`}>
                         Know More
                       </a>
-                      <a href="#" className={offstyle.offerkbooknow}>
+                      <a href="#" className={`${offstyle.offerkbooknow} book-now-btn`}>
                         Book Now
                       </a>
                     </div>

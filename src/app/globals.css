@@ -90,3 +90,27 @@ a {
 .section-padding{
     padding: 3rem 0;
 }
+
+.explore-more-btn {
+    font-size: 12px;
+    padding: 5px 10px;
+    border-radius: 0;
+    font-weight: var(--primary-font-weight);
+    margin-right: 5px;
+    text-transform: uppercase;
+    background-color: var(--white);
+    color: var(--black);
+    border: 1px solid var(--black);
+}
+.book-now-btn {
+    font-size: 12px;
+    padding: 5px 10px;
+    border-radius: 0;
+    font-weight: var(--primary-font-weight);
+    margin-right: 5px;
+    text-transform: uppercase;
+    background-color: var(--black);
+    color: var(--white);
+    border: 1px solid var(--black);
+    
+}
