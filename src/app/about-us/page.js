@@ -30,7 +30,9 @@ export default function AboutPage() {
                 <h2 className="inner-banner-heading">About Us</h2>
                 <nav aria-label="breadcrumb" className="banner-breadcrumb">
                     <ol className="breadcrumb">
-                        <li className="breadcrumb-item"><a href="/">Home</a><ChevronRight /></li>
+                        <li className="breadcrumb-item">
+                            <Link href="/">Home</Link><ChevronRight />
+                        </li>
                         <li className="breadcrumb-item active" aria-current="page">About Us</li>
                     </ol>
                 </nav>
@@ -83,7 +85,7 @@ export default function AboutPage() {
                 </div>
                 
                 <p className='text-justify'>
-                    "Amritara" derives its origins from Sanskrit. 'Amrit' means  pure, the nectar of gods or holy water and 'Tara' means stars or celestial bodies. Amritara promises an experience for the mature, adventurous traveller. Our leisure travel offerings are geared toward rejuvenating, real-life experiences for our guests.
+                    &ldquo;Amritara&rdquo; derives its origins from Sanskrit. &lsquo;Amrit&rsquo; means  pure, the nectar of gods or holy water and &lsquo;Tara&rsquo; means stars or celestial bodies. Amritara promises an experience for the mature, adventurous traveller. Our leisure travel offerings are geared toward rejuvenating, real-life experiences for our guests.
                 </p>
             </div>
             <div className="col-md-6">
