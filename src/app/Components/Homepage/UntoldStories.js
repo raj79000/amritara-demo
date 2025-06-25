@@ -6,11 +6,9 @@ import { Navigation, Autoplay, Pagination } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import Image from 'next/image';
-
 import styles from './untold.module.css';
-
-import { getUnforgettableHotelList } from '@/lib/api/getUnforgettableHotelList';
-import { getUnforgettableByHotel } from '@/lib/api/getUnforgettableByHotel';
+import { getUnforgettableHotelList } from "../../../lib/api/getUnforgettableHotelList"
+import { getUnforgettableByHotel } from '../../../lib/api/getUnforgettableByHotel';
 
 const UntoldStories = () => {
   const [experiences, setExperiences] = useState([]);
