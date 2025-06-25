@@ -71,7 +71,9 @@ h6 {
   padding: 0;
   margin: 0;
 }
-
+.text-justify {
+  text-align: justify;
+}
 a {
   color: inherit;
   text-decoration: none;
@@ -90,6 +92,39 @@ a {
 .section-padding{
     padding: 3rem 0;
 }
+.heading-style-1{
+    text-align: center;
+    position: relative;
+    margin-bottom: 2rem;
+}
+.heading-style-1 .global-heading {
+  color: var(--red) !important;
+  text-transform: uppercase !important;
+  font-size: 35px !important;
+  font-weight: 500 !important;
+  position: relative;
+}
+.line-1 {
+  position: absolute;
+  content: "";
+  height: 1px;
+  width: 80px;
+  bottom: 0px;
+  background-color: #803525;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.line-2 {
+  position: absolute;
+  content: "";
+  height: 1px;
+  width: 130px;
+  bottom: 4px;
+  background-color: #803525;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 
 .explore-more-btn {
     font-size: 12px;
