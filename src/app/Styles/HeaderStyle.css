@@ -187,7 +187,7 @@ header.header-section {
 .search-icon-banner svg {
     color: var(--white);
     background-color: var(--black);
-    padding: 9px;
+    padding: 4px;
     border-radius: 50%;
 }
 
