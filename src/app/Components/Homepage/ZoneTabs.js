@@ -1,7 +1,8 @@
 "use client";
 import { useEffect, useState } from "react";
 import { getCitiesByZone } from "../../../lib/api/getCitiesByZone";
-import { Swiper, SwiperSlide } from 'swiper/react';
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation } from "swiper/modules";
 import 'swiper/css';
 import Image from "next/image";
 import styles from "./zone.module.css";
@@ -39,6 +40,9 @@ export default function ZoneTabs({ zones }) {
           <Swiper
             spaceBetween={20}
             slidesPerView={3}
+            modules={[Navigation]}
+            navigation
+            loop={true}
             breakpoints={{
               320: {
                 slidesPerView: 1,
@@ -58,14 +62,15 @@ export default function ZoneTabs({ zones }) {
               <SwiperSlide key={city.id}>
                 <div className={styles.TabCardWrapper}>
                   <div className={styles.TabCard}>
-                    <Image src="/img/popular-3.jpg" height={300} width={500} alt={city.title} className={styles.TabCardImg} />
+                    {/* <Image src="/img/popular-3.jpg" height={300} width={500} alt={city.title} className={styles.TabCardImg} /> */}
+                    <Image src={city.image} height={300} width={500} alt={city.title} className={styles.TabCardImg} />
                     <h5 className={styles.TabCardTitle}>{city.title}</h5>
                     <div className={styles.TabContentBtn}>
-                       <Link href="#" className=" explore-more-btn">
+                       <Link href={city.slug} className=" explore-more-btn">
                         Explore
                       </Link>
                        {/* <Link href={`/city/${city.slug}`} className="btn btn-primary"> */}
-                       <Link href="#" className="book-now-btn">
+                       <Link href={city.booking_url} className="book-now-btn" target="_blank">
                         Book Now
                       </Link>
                     </div>

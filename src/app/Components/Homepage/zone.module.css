@@ -9,7 +9,7 @@
     padding: 10px;
 }
 .TabCardTitle{
-    font-size: 17px;
+    font-size: 16px;
     margin-bottom: 10px;
     margin-top: 1rem;
 }
@@ -19,6 +19,7 @@
     box-shadow: var(--primary-shadow);
     padding: 10px;
     margin-bottom: 10px;
+        min-height: 316px;
 }
 .TabCardImg{
     height: 200px;
