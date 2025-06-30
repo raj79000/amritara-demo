@@ -21,6 +21,7 @@ const BannerSec = async () => {
     <section className="hero-section position-relative vh-100 overflow-hidden h-full flex items-center justify-center">
       <div className="video-background position-absolute w-100 h-100">
         <div style={{ position: 'relative', paddingBottom: '56.25%', height: 0 }}>
+          
           {vimeoSrc ? (
             <iframe
               src={vimeoSrc}

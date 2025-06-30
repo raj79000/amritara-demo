@@ -3,33 +3,47 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
 import Image from "next/image";
-import Link from "next/link";
-import { postAPI } from '../../../lib/api/api';
 
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/navigation";
 
 import offstyle from "./offers.module.css";
-import { useEffect, useState } from "react";
+
 
 const NewOfferSlider = () => {
-  const [offers, setOffers] = useState([]);
-
-  useEffect(() => {
-    const fetchOffers = async () => {
-      try {
-        const response = await postAPI('gethomeofferlist', { offer_id: 1 });
-        if (response.status && response.data) {
-          setOffers(response.data);
-        }
-      } catch (error) {
-        console.error('Error fetching offers:', error);
-      }
-    };
-
-    fetchOffers();
-  }, []);
+  const offers = [
+    {
+      id: 1,
+      image: "/img/popular-4.jpg",
+      title: "Offer Title 1",
+      description: "Lorem Ipsum is simply dummy text of the printing",
+    },
+    {
+      id: 2,
+      image: "/img/popular-4.jpg",
+      title: "Offer Title 2",
+      description: "Lorem Ipsum is simply dummy text of the printing",
+    },
+    {
+      id: 3,
+      image: "/img/popular-4.jpg",
+      title: "Offer Title 3",
+      description: "Lorem Ipsum is simply dummy text of the printing",
+    },
+    {
+      id: 4,
+      image: "/img/popular-4.jpg",
+      title: "Offer Title 4",
+      description: "Lorem Ipsum is simply dummy text of the printing",
+    },
+    {
+      id: 5,
+      image: "/img/popular-4.jpg",
+      title: "Offer Title 5",
+      description: "Lorem Ipsum is simply dummy text of the printing",
+    },
+  ];
 
   return (
     <section className="section-padding offer-slider-sec bg-lred">
@@ -63,14 +77,14 @@ const NewOfferSlider = () => {
                   />
                   <div className={offstyle.offerboxcontent}>
                     <h3 className={offstyle.offerboxcontentheading}>{offer.title}</h3>
-                    <div className={offstyle.offerboxcontentpara} dangerouslySetInnerHTML={{ __html: offer.description.substring(0, 50) + '...' }}></div>
+                    <p className={offstyle.offerboxcontentpara}>{offer.description}</p>
                     <div className={offstyle.offerboxcontentbtn}>
-                      <Link href={`/${offer.slug}`} className={`${offstyle.offerknowmore} explore-more-btn`} target="_blank">
+                      <a href="#" className={`${offstyle.offerknowmore} explore-more-btn`}>
                         Know More
-                      </Link>
-                      <Link href={offer.booking_id} className={`${offstyle.offerkbooknow} book-now-btn`} target="_blank">
+                      </a>
+                      <a href="#" className={`${offstyle.offerkbooknow} book-now-btn`}>
                         Book Now
-                      </Link>
+                      </a>
                     </div>
                   </div>
                 </div>
