@@ -1,49 +1,68 @@
 import React from 'react'
-import Image from 'next/image'
 import Link from 'next/link'
-import { Search } from 'lucide-react';
+import { Search } from 'lucide-react'
+import { postAPI } from '../../../lib/api/api'
 
-const BannerSec = () => {
+const BannerSec = async () => {
+  // Fetch video data from API
+  const res = await postAPI('homebannervideo', { banner_id: 1 })
+
+  // Extract and sanitize the video ID
+  const videoId = res?.data?.video_url?.trim() || null;
+
+  console.log("Fetched Vimeo Video ID:", videoId);
+
+  // Build the Vimeo URL dynamically
+  const vimeoSrc = videoId
+    ? `https://player.vimeo.com/video/1008391441?autoplay=1&loop=1&title=0&byline=0&portrait=0&muted=1&controls=0&api=1&player_id=vvvvimeoVideo-${videoId}`
+    : null
+
   return (
-    <>
-
-      <section className="hero-section position-relative vh-100 overflow-hidden h-full flex items-center justify-center">
-        {/* Background Video */}
-        <div className="video-background position-absolute w-100 h-100">
-
-          <video
-            autoPlay
-            loop
-            muted
-            playsInline
-            className="w-100 h-100 object-fit-cover"
-            thumbnail="/img/banner-thumbnail.png"
-            poster="/img/banner-thumbnail.png"
-          >
-            <source src="/img/amritara-new-banner-video.mp4" type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
-          {/* <Image src="/img/main-banner-amritara-1.jpg" alt="alt" width={1800} height={1000}
-         className="w-100 h-100 object-fit-cover" /> */}
+    <section className="hero-section position-relative vh-100 overflow-hidden h-full flex items-center justify-center">
+      <div className="video-background position-absolute w-100 h-100">
+        <div style={{ position: 'relative', paddingBottom: '56.25%', height: 0 }}>
+          {vimeoSrc ? (
+            <iframe
+              src={vimeoSrc}
+              style={{
+                position: 'absolute',
+                top: 0,
+                left: 0,
+                width: '100%',
+                height: '100%',
+              }}
+              frameBorder="0"
+              allow="autoplay; fullscreen; picture-in-picture"
+              allowFullScreen
+              title="Vimeo Video"
+            ></iframe>
+          ) : (
+            <div
+              style={{
+                position: 'absolute',
+                top: 0,
+                left: 0,
+                width: '100%',
+                height: '100%',
+                backgroundColor: '#000',
+                color: '#fff',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                fontSize: '1.5rem',
+              }}
+            >
+              Video is not available
+            </div>
+          )}
         </div>
-        <div className='hero-bottom-part-ab'>
-          <Link href="#" className="search-icon-banner">
-            <Search />
-          </Link>
-        </div>
-
-        {/* <div className="hero-content text-center position-relative text-white">
-          <h1 className="display-4 fw-bold">Welcome to Your Dream Destination</h1>
-          <p className="lead mt-3">
-            Explore the world with us and discover unforgettable experiences.
-          </p>
-          <a href="/book-a-stay" className="btn btn-primary btn-lg mt-4">
-            Book Your Stay
-          </a>
-        </div> */}
-      </section>
-
-    </>
+      </div>
+      <div className="hero-bottom-part-ab">
+        <Link href="#" className="search-icon-banner">
+          <Search />
+        </Link>
+      </div>
+    </section>
   )
 }
 

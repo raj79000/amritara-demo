@@ -4,7 +4,7 @@ import "./globals.css";
 import Footer from './Common/Footer';
 
 const elsie = Elsie({
-  weight: ['400', '900'], // Load specific weights
+  weight: ['400', '900'],
   subsets: ['latin'],
   variable: '--font-elsie',
   display: 'swap',

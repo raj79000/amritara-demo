@@ -43,8 +43,6 @@ export default function AboutPage() {
         <div className="container">
             <div className='heading-style-1'>
                 <h1 className="mb-4 text-center global-heading">ABOUT AMRITARA</h1>
-                <span className='line-1'></span>
-                <span className='line-2'></span>
             </div>
             
 
@@ -80,8 +78,6 @@ export default function AboutPage() {
             <div className="col-md-6">
                 <div className='heading-style-2'>
                     <h2 className="global-heading">Our Story</h2>
-                    <span className='line-1'></span>
-                    <span className='line-2'></span>
                 </div>
                 
                 <p className='text-justify'>

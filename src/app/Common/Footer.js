@@ -67,9 +67,9 @@ const Footer = () => {
                 
             </div>
             <div className="col-md-2 mb-3">
-              <div className={style.footerLogoD}>
+              <Link className={style.footerLogoD} href="/" >
                 <Image src="/img/amritara-footer-logo.png" alt="Amritara Logo" width={600} height={600} className={style.footerLogo} />
-              </div>
+              </Link>
             </div>
             <div className="col-md-5 mb-3">
               <div className={style.footerContactData}>
