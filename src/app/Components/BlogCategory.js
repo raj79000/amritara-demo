@@ -102,7 +102,7 @@ export default function BlogCategory({ slug, blogs }) {
                     <ul className="blog-list-sidebar-ul">
                       {blogs.map((blog) => (
                         <li key={blog.id} className="blog-list-sidebar-li">
-                          <FontAwesomeIcon icon={faDotCircle} />
+                          {/* <FontAwesomeIcon icon={faDotCircle} /> */}
                           <Link href={`/${blog.urlslug}`} className="blog-list-link">
                             {blog.title || 'Untitled Blog'} {/* Add fallback for title */}
                           </Link>

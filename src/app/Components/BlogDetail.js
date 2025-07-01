@@ -53,7 +53,7 @@ export default function BlogDetail({ blog, relatedBlogs }) {
                       <ul className="blog-list-sidebar-ul">
                         {relatedBlogs?.map((item) => (
                           <li key={item.id} className="blog-list-sidebar-li">
-                            <FontAwesomeIcon icon={faDotCircle} />
+                            {/* <FontAwesomeIcon icon={faDotCircle} /> */}
                             <Link href={`/${item.urlslug}`} className="blog-list-link">
                               {item.title}
                             </Link>
