@@ -1,5 +1,5 @@
   "use client"
-  import React, { useState } from 'react';
+  import React, { useState, useEffect } from 'react';
   import { Swiper, SwiperSlide } from 'swiper/react';
   import { Navigation, Autoplay, Pagination } from 'swiper/modules';
   import 'swiper/css';
@@ -24,8 +24,9 @@
       }
     };
 
-    // Call fetchStories immediately when component mounts
-    fetchStories();
+    useEffect(() => {
+      fetchStories();
+    }, []);
 
     if (loading) {
       return <p className="text-center py-5">Loading stories...</p>;
@@ -44,7 +45,8 @@
             <Swiper
               loop={true}
               centeredSlides={true}
-              slidesPerView={'auto'}
+              slidesPerView={'1'}
+              // slidesPerView={'auto'}
               spaceBetween={5}
               autoHeight={true}
               navigation={{
@@ -59,7 +61,7 @@
               breakpoints={{
                 768: {
                   spaceBetween: 10,
-                },
+                }
               }}
               className={styles.swiperContainer}
             >
@@ -74,7 +76,7 @@
                       className={styles.swiperSlideImg}
                     />
                   )}
-                  <h3 className={styles.slideTitle}>{story.title}</h3>
+                  <h5 className={styles.slideTitle}>{story.title}</h5>
                 </SwiperSlide>
               ))}
               <div className={`swiper-button-prev ${styles.navButton}`}></div>

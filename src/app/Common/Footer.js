@@ -8,28 +8,28 @@ const Footer = () => {
     <>
       <footer className={`${style.footer} footer`}>
         <div className="container">
-          <div className="top-inline-list py-5">
+          <div className="top-inline-list py-4">
             <ul className="list-inline mb-0">
               <li className="list-inline-item me-0">
-                <Link href="#" className={style.linkstyle}>
+                <Link href="/about-us" className={style.linkstyle}>
                   About Us
                 </Link>
               </li>
               <span className="mx-1">|</span>
               <li className="list-inline-item me-0">
-                <Link href="#" className={style.linkstyle}>
+                <Link href="/careers" className={style.linkstyle}>
                   Careers
                 </Link>
               </li>
               <span className="mx-1">|</span>
               <li className="list-inline-item me-0">
-                <Link href="#" className={style.linkstyle}>
+                <Link href="/term-and-condition" className={style.linkstyle}>
                   Terms & Conditions
                 </Link>
               </li>
               <span className="mx-1">|</span>
               <li className="list-inline-item me-0">
-                <Link href="#" className={style.linkstyle}>
+                <Link href="/privacy-policy" className={style.linkstyle}>
                   Privacy Policy
                 </Link>
               </li>

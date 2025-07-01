@@ -4,15 +4,10 @@ import { Search } from 'lucide-react'
 import { postAPI } from '../../../lib/api/api'
 
 const BannerSec = async () => {
-  // Fetch video data from API
   const res = await postAPI('homebannervideo', { banner_id: 1 })
-
-  // Extract and sanitize the video ID
   const videoId = res?.data?.video_url?.trim() || null;
 
   console.log("Fetched Vimeo Video ID:", videoId);
-
-  // Build the Vimeo URL dynamically
   const vimeoSrc = videoId
     ? `https://player.vimeo.com/video/1008391441?autoplay=1&loop=1&title=0&byline=0&portrait=0&muted=1&controls=0&api=1&player_id=vvvvimeoVideo-${videoId}`
     : null

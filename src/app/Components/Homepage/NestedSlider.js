@@ -76,21 +76,21 @@ const dummyData = [
     image: "https://images.unsplash.com/photo-1511497584788-876760111969?auto=format&fit=crop&w=1200&q=80",
     items: [
       {
-        text: "Majestic Mountain",
+        text: "Raje Mountain",
         image: "/img/popular-1.jpeg",
       },
       {
-        text: "Majestic Mountain",
+        text: "Majes Mountain",
         image: "/img/popular-3.jpg",
       },
       {
-        text: "Majestic Mountain",
+        text: "Majesticcc Mountain",
         image: "/img/popular-4.jpg",
       },
     ],
   },
   {
-    title: "Desert Adventures",
+    title: "Rathore Adventures",
     description: "Experience the mystique and beauty of desert landscapes.",
     image: "https://images.unsplash.com/photo-1509316785289-025f5b846b35?auto=format&fit=crop&w=1200&q=80",
     items: [
@@ -183,7 +183,7 @@ export default function NestedSwiper() {
                             className="w-full h-36 object-cover rounded-md mb-2 child-image w-100"
                         />
                         <div className="child-slider-content">
-                            {/* <h3 className="child-sl-title">{item.text}</h3> */}
+                            <h3 className="child-sl-title">{item.title}</h3>
                             <div className="child-slider-content-btm">
                               <div className="child-slider-content-btm-left">
                                 {/* <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.

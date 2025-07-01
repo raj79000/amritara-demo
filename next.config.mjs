@@ -1,6 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    images: {
+     images: {
+    domains: ['alivaablog.cinuniverse.com'],
+  },
     remotePatterns: [
       {
         protocol: 'https',
@@ -8,7 +10,6 @@ const nextConfig = {
         pathname: '/uploads/**',
       },
     ],
-  },
-};
+  }
 
 export default nextConfig;
