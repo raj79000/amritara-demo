@@ -126,7 +126,7 @@ const handleSubmit = async (e) => {
                 <div className='heading-style-2'>
                     <h1 className="mb-4 global-heading">Careers</h1>
                 </div>
-                <p className='text-justify'>As India's fastest expanding hospitality brand, we're always on the lookout for great talent for our operating and upcoming hotels. To find suitable opportunities, please fill-up the form below and submit your resume. We will contact you as and when a suitable opportunity arises. </p>
+                <p className='text-justify'>{"As India's fastest expanding hospitality brand, we're always on the lookout for great talent for our operating and upcoming hotels. To find suitable opportunities, please fill-up the form below and submit your resume. We will contact you as and when a suitable opportunity arises."} </p>
             </div>
             <div className='col-md-6'>
                 <div className='career-form'>
