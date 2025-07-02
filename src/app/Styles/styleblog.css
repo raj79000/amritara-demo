@@ -53,6 +53,9 @@ padding: 10px;
     margin-bottom: 1rem;
     display: inline-block;
 }
+img{
+    max-width: 100%!important;
+}
 .blog-page-contact-form{
     /* position: sticky; */
     /* position: -webkit-sticky; */
