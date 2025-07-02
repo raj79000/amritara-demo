@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
      images: {
-    domains: ['alivaablog.cinuniverse.com'],
+    domains: ['alivaablog.cinuniverse.com', 'amritara.cinuniverse.com'],
   },
     remotePatterns: [
       {

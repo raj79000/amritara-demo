@@ -72,7 +72,7 @@ const MainHeader = () => {
             <li><Link href="/our-hotels" onClick={toggleSidebar}>Our Hotels</Link></li>
             <li><Link href="/our-offers" onClick={toggleSidebar}>Our Offers</Link></li>
             <li><Link href="/about-us" onClick={toggleSidebar}>About Us</Link></li>
-            <li><Link href="/offers" onClick={toggleSidebar}>Rewards</Link></li>
+            <li><Link href="/rewards" onClick={toggleSidebar}>Rewards</Link></li>
             <li><Link href="/contact-us" onClick={toggleSidebar}>Contact Us</Link></li>
           </ul>
         </div>

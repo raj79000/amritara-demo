@@ -135,9 +135,7 @@ const ContactForm = () => {
             className="i-amphtml-form"
             noValidate
           >
-            <h3 className="text-center">
-              <b>Contact Us</b>
-            </h3>
+            <h3 className="text-center">Contact Us</h3>
 
             <h4></h4>
 
@@ -146,7 +144,7 @@ const ContactForm = () => {
                 type="text"
                 name="name"
                 maxLength={30}
-                placeholder="Your Name"
+                placeholder="Name"
                 required
                 value={formData.name}
                 onChange={handleChange}
@@ -163,7 +161,7 @@ const ContactForm = () => {
               <input
                 type="email"
                 name="email"
-                placeholder="Your Email"
+                placeholder="Email"
                 maxLength={100}
                 required
                 value={formData.email}
@@ -182,7 +180,7 @@ const ContactForm = () => {
                 type="tel"
                 maxLength={10}
                 name="phone"
-                placeholder="Your Phone Number"
+                placeholder="Phone"
                 required
                 value={formData.phone}
                 onChange={handleChange}

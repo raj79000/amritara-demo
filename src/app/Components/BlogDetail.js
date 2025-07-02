@@ -1,19 +1,37 @@
-"use client";
+
 import Image from "next/image";
 import ContactForm from "./ContactForm";
 import Link from "next/link";
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// import { faDotCircle } from "@fortawesome/free-solid-svg-icons";
+import "../Styles/inner-hero.css"
 import "../styles/styleblog.css";
+import MainHeader from "../Common/MainHeader";
+import { ChevronRight, ChevronsRight } from "lucide-react";
 
 export default function BlogDetail({ blog, relatedBlogs }) {
   return (
     <>
-      <section className="banner-section-blog mb-5">
-        <div className="container">
-          <Image src={blog.image_url} alt={blog.title} width={800} height={400} className="blog-banner-img w-100" />
+    <MainHeader></MainHeader>
+
+        <section className="hero-section-inner">
+       <Image src={blog.image_url} alt={blog.title} height={500} width={1500} className="w-100 inner-hero-image" />
+        <div className="inner-hero-content">
+            <div className="text-center">
+                <h2 className="inner-banner-heading">Blog Detail</h2>
+                <nav aria-label="breadcrumb" className="banner-breadcrumb">
+                    <ol className="breadcrumb">
+                        <li className="breadcrumb-item">
+                            <Link href="/">Home</Link><ChevronRight />
+                        </li>
+                        <li className="breadcrumb-item">
+                            <Link href="/blog">Blog</Link><ChevronRight />
+                        </li>
+                        <li className="breadcrumb-item active" aria-current="page">Blog Detail</li>
+                    </ol>
+                </nav>
+            </div>
         </div>
-      </section>
+    </section>
+     
 
       <section className="blog-global-things">
         <div className="container">
@@ -53,7 +71,7 @@ export default function BlogDetail({ blog, relatedBlogs }) {
                       <ul className="blog-list-sidebar-ul">
                         {relatedBlogs?.map((item) => (
                           <li key={item.id} className="blog-list-sidebar-li">
-                            {/* <FontAwesomeIcon icon={faDotCircle} /> */}
+                            <ChevronsRight></ChevronsRight>
                             <Link href={`/${item.urlslug}`} className="blog-list-link">
                               {item.title}
                             </Link>

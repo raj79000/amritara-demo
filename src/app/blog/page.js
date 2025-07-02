@@ -1,7 +1,9 @@
 import { fetchBlogList } from "../../lib/api/blogs";
+import "../Styles/inner-hero.css"
 import "../styles/styleblog.css";
 import Image from "next/image";
 import Link from "next/link";
+import { ChevronRight, ChevronsRight } from "lucide-react";
 import ContactForm from "../Components/ContactForm";
 import MainHeader from "../Common/MainHeader";
 
@@ -38,11 +40,11 @@ function stripHtml(html) {
 
 export async function generateMetadata() {
   return {
-    title: "Alivaa Hotels Blog",
-    description: "Read the latest articles from Alivaa Hotels",
+    title: "Amritara Hotels - Best Resorts in India - Official Website Blog",
+    description: "Discover Travel Blogs at Amritara Hotels & Resort. Get to know about spectacular tourist attractions, restaurants & activities to do in India. Explore now.",
     openGraph: {
-      title: "Alivaa Hotels Blog",
-      description: "Read the latest articles from Alivaa Hotels",
+      title: "Amritara Hotels - Best Resorts in India - Official Website Blog",
+      description: "Discover Travel Blogs at Amritara Hotels & Resort. Get to know about spectacular tourist attractions, restaurants & activities to do in India. Explore now.",
     },
     alternates: {
       canonical: "/blog",
@@ -58,18 +60,33 @@ export default async function BlogPage() {
       <>
         <MainHeader></MainHeader>
 
-        <section className="banner-section m-1">
-          <img
-            src="/images/blog/blog-main.png"
-            alt="Hotels in Gurgaon"
-            className="banner-img pt-0"
-          />
-        </section>
+        <section className="hero-section-inner">
+        <video autoPlay loop muted playsInline className="w-100 inner-hero-image" thumbnail="/img/banner-thumbnail.png"
+            poster="/img/banner-thumbnail.png"
+          >
+            <source src="/img/amritara-new-banner-video.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+        </video>
+        {/* <Image src="/img/popular-1.jpeg" alt="About Us Hero Image" height={500} width={1500} className="w-100 inner-hero-image" /> */}
+        <div className="inner-hero-content">
+            <div className="text-center">
+                <h2 className="inner-banner-heading">Blogs</h2>
+                <nav aria-label="breadcrumb" className="banner-breadcrumb">
+                    <ol className="breadcrumb">
+                        <li className="breadcrumb-item">
+                            <Link href="/">Home</Link><ChevronRight />
+                        </li>
+                        <li className="breadcrumb-item active" aria-current="page">Blogs</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </section>
 
         <section className="blog-global-things">
           <div className="container">
             <div className="blog-list">
-              <h1 className="m-3 inner-hd text-center">Alivaa Hotels Blog</h1>
+              <h1 className="m-3 inner-hd text-center">Amritara Hotels Blog</h1>
               <div className="row">
                 <div className="col-lg-8">
                   <div className="row">
@@ -127,7 +144,7 @@ export default async function BlogPage() {
                         <ul className="blog-list-sidebar-ul">
                           {blogs.map((blog) => (
                           <li key={blog.id} className="blog-list-sidebar-li"> 
-                            {/* <FontAwesomeIcon icon={faDotCircle} /> */}
+                            <ChevronsRight></ChevronsRight>
                             <Link href={`/${blog.urlslug}`} className="blog-list-link">{blog.title}</Link>
                           </li>
                           ))}

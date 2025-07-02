@@ -1,7 +1,25 @@
-
-.blog-card-list{
-    margin-bottom: 1.5rem;
+h2,h3,h4,h5,h6,b,strong{
+font-weight: 500!important;
+}
+h2{
+ font-size: 25px;
+}
+h3{
+ font-size: 22px;
+}
+h4{
+ font-size: 19px;
+}
+h5{
+ font-size: 17px;
+}
+h6{
+ font-size: 15px;
+}
+.blog-card-list {
+    margin-bottom: 0.5rem;
     height: 100%;
+    display: grid;
 }
 .blog-card-list .blog-list-image{
     height: 300px;
@@ -16,18 +34,20 @@ padding: 10px;
 }
 .blog-card-list .blog-list-title,
 .blog-card-list .blog-list-title-link {
-    font-size: 17px;
-    font-weight: 600;
+        font-size: 18px;
+    font-weight: 500;
     text-transform: capitalize;
     line-height: revert-layer;
     text-decoration: none;
-    color: #002d62;
+    color: var(--black);
+    line-height: 1.5rem;
+    margin-bottom: 1rem;
 }
 .blog-card-list .blog-list-link {
     text-decoration: none;
     font-weight: 500;
-    color: #ffffff !important;
-    background-color: #002d62;
+    color: var(--white) !important;
+    background-color: var(--black);
     padding: 5px 10px;
     font-size: 14px;
     margin-bottom: 1rem;
@@ -38,12 +58,17 @@ padding: 10px;
     /* position: -webkit-sticky; */
     top: 100px;
 }
-
+.blog-page-contact-form form{
+        background: #f9f9f9;
+    padding: 25px;
+    margin: 0;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, .2), 0 5px 5px 0 rgba(0, 0, 0, .24);
+}
 .blog-detail-page .blog-detail-main-title {
     text-transform: capitalize;
     font-size: 25px;
-    font-weight: 600;
-    color: #002d62;
+    font-weight: 500;
+    color: var(--black);
     margin-bottom: 10px;
     margin-top: 1rem;
 
@@ -65,25 +90,33 @@ padding: 10px;
     width: 100%;
 }
 .contactSubmit-blog{
-    background-color: #002d62!important;
+        background-color: var(--black) !important;
     border-radius: 0;
-    
+    color: var(--white);
+    display: block;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 1rem;
+}
+.contactSubmit-blog:hover{
+color: var(--white);
 }
 .blog-category-and-date{
-    font-weight: 600;
+    font-weight: 500;
     font-size: small;
 }
 .blog-page-contact-form form .form-control{
     border-radius: 0;
     box-shadow: none;
-    border: 1px solid #002d62!important;
-    color: #002d62!important;
-    background-color: #fff;
+    border: 1px solid var(--black)!important;
+    color: var(--black)!important;
+    background-color: var(--white);
     margin-bottom: 10px!important;
+    font-size: 14px;
 }
 .blog-list-sidebar {
     padding: 10px;
-    border: 1px solid #002d62;
+    border: 1px solid var(--black);
     border-radius: 0px;
     margin-bottom: 10px;
     margin-top: 1rem;box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
@@ -95,7 +128,7 @@ padding: 10px;
     list-style: none;
 }
 .blog-list-sidebar ul li{
-       border-bottom: 1px solid #002d62;
+       border-bottom: 1px solid var(--black);
     margin: 10px 0;
     padding-bottom: 5px;
 }
@@ -107,23 +140,18 @@ padding: 10px;
     height: 15px;
     width: 15px;
     margin-right: 10px;
-    color: #002d62;
+    color: var(--black);
 }
 .blog-list-sidebar ul li .blog-list-link {
-    color: #000;
+    color: var(--black);
     text-transform: capitalize;
     font-weight: 500;
     font-size: 14px;
 }
 .blog-card-list .blog-list-content-box .blog-category-link {
-    color: #00499f;
+    color: var(--black);
 }
-.inner-hd{
-        font-family: 'Agatho' !important;
-}
-.inner-hd {
-    font-family: auto !important;
-}
+
 .blog-related-post-list-item{
     margin-bottom: 2rem;
 }
@@ -134,22 +162,24 @@ padding: 10px;
 }
 .blog-related-post-list-item .blog-related-post-list-item-link{
     text-decoration: none;
-    color: #002d62;
+    color: var(--black);
     font-weight: 500;
     text-transform: capitalize;
     font-weight: 500;
     font-size: 14px;
 }
 .blog-related-post-list-item .blog-related-post-list-item-link h6{
-    font-size: 13px;
-    font-weight: 600;
+        font-size: 15px;
+    font-weight: 400;
     text-transform: capitalize;
     line-height: revert-layer;
     text-decoration: none;
-    color: #002d62;
+    color: var(--black);
     text-align: center;
+    line-height: 1.4rem;
+    margin-top: 10px;
 }
 .blog-list-sidebar-box-fixed {
     position: sticky;
-    top: 190px;
+    top: 10px;
 }

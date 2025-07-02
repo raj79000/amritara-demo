@@ -41,7 +41,7 @@ const Footer = () => {
               </li>
               <span className="mx-1">|</span>
               <li className="list-inline-item me-0">
-                <Link href="#" className={style.linkstyle}>
+                <Link href="/blog" className={style.linkstyle}>
                   Blog
                 </Link>
               </li>
