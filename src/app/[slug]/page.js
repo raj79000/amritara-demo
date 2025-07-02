@@ -5,7 +5,7 @@ import {
 } from "../../lib/api/blogs";
 import MainHeader from "../Common/MainHeader";
 import BlogDetail from "../Components/BlogDetail";
-import BlogCategory from "../components/BlogCategory";
+import BlogCategory from "../Components/BlogCategory";
 
 export const dynamicParams = true; // Enable SSR for dynamic paths
 
