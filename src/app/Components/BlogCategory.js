@@ -3,7 +3,7 @@ import Image from "next/image";
 import ContactForm from "./ContactForm";
 import Link from "next/link";
 import "../Styles/inner-hero.css"
-import "../styles/styleblog.css";
+import "../Styles/styleblog.css";
 import MainHeader from "../Common/MainHeader";
 import { ChevronRight, ChevronsRight } from "lucide-react";
 

@@ -2,7 +2,6 @@
 const nextConfig = {
      images: {
     domains: ['alivaablog.cinuniverse.com', 'amritara.cinuniverse.com'],
-  },
     remotePatterns: [
       {
         protocol: 'https',
@@ -11,5 +10,6 @@ const nextConfig = {
       },
     ],
   }
+}
 
 export default nextConfig;

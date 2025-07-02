@@ -1,6 +1,6 @@
 import { fetchBlogList } from "../../lib/api/blogs";
 import "../Styles/inner-hero.css"
-import "../styles/styleblog.css";
+import "../Styles/styleblog.css";
 import Image from "next/image";
 import Link from "next/link";
 import { ChevronRight, ChevronsRight } from "lucide-react";
