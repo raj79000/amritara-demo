@@ -25,6 +25,8 @@ h6{
     height: 300px;
     width: 100%;
     object-fit: cover;
+    background-color: #eeeeee;
+    overflow: hidden;
     
 }
 .blog-card-list .blog-list-content-box{
@@ -159,9 +161,12 @@ color: var(--white);
     margin-bottom: 2rem;
 }
 .blog-related-post-list-item img{
-    height: 150px;
+        height: 150px;
+    min-height: 150px;
     width: 100%;
     object-fit: cover;
+    overflow: hidden;
+    background-color: #e6e6e6;
 }
 .blog-related-post-list-item .blog-related-post-list-item-link{
     text-decoration: none;

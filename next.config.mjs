@@ -1,12 +1,12 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
      images: {
-    domains: ['alivaablog.cinuniverse.com', 'amritara.cinuniverse.com'],
+    domains: ['amritara.cinuniverse.com'],
     remotePatterns: [
       {
         protocol: 'https',
         hostname: 'amritara.cinuniverse.com',
-        pathname: '/uploads/**',
+        pathname: '/admin/**',
       },
     ],
   }

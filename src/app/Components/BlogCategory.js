@@ -100,7 +100,7 @@ export default function BlogCategory({ slug, blogs }) {
                           className="blog-list-image"
                         />
                         <div className="blog-list-content-box">
-                          <Link href={`/${blog.urlslug}`} className="blog-list-title-link">
+                          <Link href={`/blog/${blog.urlslug}`} className="blog-list-title-link">
                             <h5 className="blog-list-title">{blog.title || 'Untitled Blog'}</h5> {/* Add fallback for title */}
                           </Link>
                           <p className="blog-category-and-date">
@@ -109,7 +109,7 @@ export default function BlogCategory({ slug, blogs }) {
                           <p className="blog-list-desc">
                             {stripHtml(blog.description || '').slice(0, 120)}... {/* Add fallback for description */}
                           </p>
-                          <Link href={`/${blog.urlslug}`} className="blog-list-link">Read more</Link>
+                          <Link href={`/blog/${blog.urlslug}`} className="blog-list-link">Read more</Link>
                         </div>
                       </div>
                     </div>
@@ -125,7 +125,7 @@ export default function BlogCategory({ slug, blogs }) {
                       {blogs.map((blog) => (
                         <li key={blog.id} className="blog-list-sidebar-li">
                           <ChevronsRight></ChevronsRight>
-                          <Link href={`/${blog.urlslug}`} className="blog-list-link">
+                          <Link href={`/blog/${blog.urlslug}`} className="blog-list-link">
                             {blog.title || 'Untitled Blog'} {/* Add fallback for title */}
                           </Link>
                         </li>

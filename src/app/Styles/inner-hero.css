@@ -19,6 +19,9 @@
   height: 80vh;
   object-fit: cover;
   position: relative;
+  min-width: 100%;
+  background-color: aliceblue;
+  min-height: 400px;
 }
 .hero-section-inner .inner-hero-content {
   position: absolute;

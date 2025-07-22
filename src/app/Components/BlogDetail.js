@@ -52,7 +52,7 @@ export default function BlogDetail({ blog, relatedBlogs }) {
                       {relatedBlogs.map((item) => (
                         <div key={item.id} className="col-md-4">
                           <div className="blog-related-post-list-item">
-                            <Link href={`/${item.urlslug}`} className="blog-related-post-list-item-link">
+                            <Link href={`/blog/${item.urlslug}`} className="blog-related-post-list-item-link">
                               <Image src={item.image_url} alt={item.title} width={500} height={300} className="w-100" />
                               <h6>{item.title}</h6>
                             </Link>
@@ -72,7 +72,7 @@ export default function BlogDetail({ blog, relatedBlogs }) {
                         {relatedBlogs?.map((item) => (
                           <li key={item.id} className="blog-list-sidebar-li">
                             <ChevronsRight></ChevronsRight>
-                            <Link href={`/${item.urlslug}`} className="blog-list-link">
+                            <Link href={`/blog/${item.urlslug}`} className="blog-list-link">
                               {item.title}
                             </Link>
                           </li>

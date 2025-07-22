@@ -7,7 +7,7 @@ import { ChevronRight, ChevronsRight } from "lucide-react";
 import ContactForm from "../Components/ContactForm";
 import MainHeader from "../Common/MainHeader";
 
-const dummyImage = "/alivaa-dummy-image.png";
+const dummyImage = "/img/amritara-dummy.jpg";
 
 function stripHtml(html) {
   if (!html) return "";
@@ -102,7 +102,7 @@ export default async function BlogPage() {
                           />
                           <div className="blog-list-content-box">
                             <Link
-                              href={`/${blog.urlslug}`}
+                              href={`blog/${blog.urlslug}`}
                               className="blog-list-title-link"
                             >
                               <h5 className="blog-list-title">{blog.title}</h5>
@@ -112,7 +112,7 @@ export default async function BlogPage() {
                               {blog.post_date} -{" "}
                               <i>
                                 <Link
-                                  href={`/${blog.category_slug}`}
+                                  href={`blog/${blog.category_slug}`}
                                   className="blog-category-link"
                                 >
                                   {blog.category_name}
@@ -126,7 +126,7 @@ export default async function BlogPage() {
                               {stripHtml(blog.description).slice(0, 130)}...
                             </p>
                             <Link
-                              href={`/${blog.urlslug}`}
+                              href={`blog/${blog.urlslug}`}
                               className="blog-list-link"
                             >
                               Read more
@@ -145,7 +145,7 @@ export default async function BlogPage() {
                           {blogs.map((blog) => (
                           <li key={blog.id} className="blog-list-sidebar-li"> 
                             <ChevronsRight></ChevronsRight>
-                            <Link href={`/${blog.urlslug}`} className="blog-list-link">{blog.title}</Link>
+                            <Link href={`blog/${blog.urlslug}`} className="blog-list-link">{blog.title}</Link>
                           </li>
                           ))}
                         </ul>

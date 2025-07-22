@@ -69,7 +69,7 @@ const MainHeader = () => {
         <div className="sidebar-content">
           <ul className="sidebar-nav">
             <li><Link href="/" onClick={toggleSidebar}>Home</Link></li>
-            <li><Link href="/our-hotels" onClick={toggleSidebar}>Our Hotels</Link></li>
+            <li><Link href="/hotels" onClick={toggleSidebar}>Our Hotels</Link></li>
             <li><Link href="/our-offers" onClick={toggleSidebar}>Our Offers</Link></li>
             <li><Link href="/about-us" onClick={toggleSidebar}>About Us</Link></li>
             <li><Link href="/rewards" onClick={toggleSidebar}>Rewards</Link></li>

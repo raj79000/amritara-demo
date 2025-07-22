@@ -2,10 +2,10 @@ import {
   fetchBlogDetail,
   fetchCategoryBlogs,
   fetchBlogList,
-} from "../../lib/api/blogs";
-import MainHeader from "../Common/MainHeader";
-import BlogDetail from "../Components/BlogDetail";
-import BlogCategory from "../Components/BlogCategory";
+} from "../../../lib/api/blogs";
+import MainHeader from "../../Common/MainHeader";
+import BlogDetail from "../../Components/BlogDetail";
+import BlogCategory from "../../Components/BlogCategory";
 
 export const dynamicParams = true; // Enable SSR for dynamic paths
 
@@ -41,8 +41,8 @@ export async function generateMetadata({ params }) {
     }
   } catch {}
     return {
-    title: "Alivaa Hotels and Resorsts",
-    description: "Alivaa Hotels and Resorsts",
+    title: "Amritara Hotels - Best Resorts in India - Official Website Blog",
+    description: "Amritara Hotels and Resorts offers a collection of unique and luxurious stays across India. Explore our blog for travel tips, destination guides, and more.",
   };
 }
 

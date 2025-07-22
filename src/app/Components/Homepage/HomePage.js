@@ -1,5 +1,4 @@
-// "use client";
-// import Fullpage, { FullPageSections, FullpageSection, FullpageNavigation } from '@ap.cx/react-fullpage';
+
 import dynamic from "next/dynamic";
 
 const MainHeader = dynamic(() => import("../../Common/MainHeader"));
